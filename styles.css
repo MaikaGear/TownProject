@@ -1,0 +1,110 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    margin: 0px;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    color: #001524;
+    background-color: #fdfffc;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+#hero {
+    background-image: url("/images/rancho_cucamonga_california__4088x2477___v1920x820.jpg");
+    background-size: cover;
+    height: 300px;
+    padding-top: 0px;
+    color: #fdfffc;
+    text-shadow: 0px 0px 5px black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0px;
+    color: #fdfffc;
+    text-shadow: 0px 0px 3px black;
+    padding-top: 10px;
+}
+
+.main-heading{
+    padding-top: 90px;
+}
+
+.activities-section{
+    background-color: #82c0cc;
+    height: auto;
+}
+
+.activity {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.activity-1, .activity-2, .activity-3{
+    flex: 1;
+}
+
+.activity-img:hover{
+    transform: scale(1.5);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.activity-img:not(:hover){
+    transition: transform 0.2s;
+}
+.guide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 80px;
+    background-color: #489fb5;
+    padding: 20px;
+    border-left: solid 8px #ffa62b;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.my-icon{
+    border-radius: 10px;
+}
+
+.guide:hover{
+    background-color: #377b8b;
+    border-color: #e08300;
+    transition: 0.3s ease-in;
+    transform: translateY( 5px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.guide:not(:hover){
+    transition: 0.3s ease-in;
+}
+
+.guide:hover > img {
+    width: 116px;
+    transition: 0.3s ease-in;
+}
+.guide:not(:hover) > img {
+    transition: 0.3s ease-in;
+}
+
+/* .activity-1, .activity-2{
+    border-right: 1px solid rgba(255, 255, 255, 0.274);
+} */
